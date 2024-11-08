@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Sytles.css">
+    <title>Contador de Calorías</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Contador de Calorías</h1>
+        <form id="calorieForm">
+            <label for="budget">Presupuesto diario de calorías:</label>
+            <input type="number" id="budget" required>
+
+            <label for="mealCalories">Calorías de la comida:</label>
+            <input type="number" id="mealCalories" required>
+            <button type="button" id="addMeal">Agregar comida</button>
+
+            <h2>Comidas ingresadas:</h2>
+            <ul id="mealList"></ul>
+
+            <button type="submit">Calcular</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="Scrip.js"></script>
+</body>
+</html>
